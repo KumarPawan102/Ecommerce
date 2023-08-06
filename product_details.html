@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore | Product Details</title>
+    <link rel="stylesheet" href="detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fcae184f71.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="signIn.html"><i class="fa-solid fa-user"></i>  Sign In</a></li>
+                        <li><a href="cart.html"><i class="fa-solid fa-cart-plus"></i>Cart</a></li>
+                    </ul>
+                    </ul>
+                </nav>
+                <img src="images/menubar.png" class="menu-icon" alt="" 
+                onclick="menutoggle()">
+                <img src="images/moon.png" id="moon" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- single product detail -->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/details-1.jpg" width="100%" id="productImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/details-1.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/details-2.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/details-3.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/details-4.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / T-Shirt</p>
+                <h1>Red Printed T-Shirt by PUMA</h1>
+                <h4>₹599.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1"><br>
+                <a href="cart.html" class="btn">Add To Cart</a>
+                <a href="cart.html" class="btn k">Buy Now</a>
+                <h3>Description  <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Give your Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                atque blanditiis provident et ipsam, velit doloremque perferendis. Iure, 
+                magnam cum? just more few words and we are done with that.Okay</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----title----- -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href=""><p>View More</p></a>
+        </div>
+    </div>
+
+
+
+<!-- ---------- Related products--------- -->
+     <div class="small-container ">
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/detail-1.webp" class="more" alt="">
+                <h4>White Plain T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹479.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/detail-2.webp" class="more" alt="">
+                <h4>Blue Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₹559.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/detail-3.webp" class="more" alt="">
+                <h4>Black Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹489.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/detail-4.webp" class="more" alt="">
+                <h4>White Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹539.00</p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- ---footer section---- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Popular Category</h3>
+                    <ul>
+                        <li>Electronic</li>
+                        <li>Fashion</li>
+                        <li>Cosmetic</li>
+                        <li>Health</li>
+                        <li>Watches</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Delivery</li>
+                        <li>Terms & Conditions</li>
+                        <li>Return Policy</li>
+                        <li>Report</li>
+                        <li>Secure Payment</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3 id="contact">Contact Us</h3>
+                    <ul>
+                        <li>
+                            <address class="content">
+                                <i class="fa-solid fa-location-dot"></i>
+                                22nd Street Colony Rajdev
+                                Path, Bangalore, India
+                            </address>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="tel:+607936-8058" class="footer-nav-link"> <i class="fa-solid fa-phone"></i> +91 8456741234</a>
+                        </li>
+                        <li>
+                            <a href="mailto:example@gmail.com" class="footer-nav-link"> <i class="fa-regular fa-envelope"></i> redstore@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <img src="images/payment.png" class="payment-img" alt="">
+                <p class="copyright"> Copyright <i class="fa-regular fa-copyright"></i> 2023 - RedStore.com</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

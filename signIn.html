@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn to RedStore | Online Shopping</title>
+    <link rel="stylesheet" href="signIn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/fcae184f71.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="signIn.html"><i class="fa-solid fa-user"></i>  Sign In</a></li>
+                        <li><a href="cart.html"><i class="fa-solid fa-cart-plus"></i>Cart</a></li>
+                    </ul>
+                    </ul>
+                </nav>
+                <img src="images/menubar.png" class="menu-icon" alt="" 
+                onclick="menutoggle()">
+                <img src="images/moon.png" id="moon" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- signup content -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" width="100%" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="signIn()">Sign In</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <form id="signInForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password" id="">
+                            <button type="submit"  class="btn">Sign In</button>
+                            <a href="" id="forgot">Forgot password ?</a>
+                        </form>
+
+                        <form id="regForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password" id="">
+                            <button type="submit" class="btn">Create Account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Popular Category</h3>
+                    <ul>
+                        <li>Electronic</li>
+                        <li>Fashion</li>
+                        <li>Cosmetic</li>
+                        <li>Health</li>
+                        <li>Watches</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Delivery</li>
+                        <li>Terms & Conditions</li>
+                        <li>Return Policy</li>
+                        <li>Report</li>
+                        <li>Secure Payment</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3 id="contact">Contact Us</h3>
+                    <ul>
+                        <li>
+                            <address class="content">
+                                <i class="fa-solid fa-location-dot"></i>
+                                22nd Street Colony Rajdev
+                                Path, Bangalore, India
+                            </address>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="tel:+607936-8058" class="footer-nav-link"> <i class="fa-solid fa-phone"></i> +91 8456741234</a>
+                        </li>
+                        <li>
+                            <a href="mailto:example@gmail.com" class="footer-nav-link"> <i class="fa-regular fa-envelope"></i> redstore@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <img src="images/payment.png" class="payment-img" alt="">
+                <p class="copyright"> Copyright <i class="fa-regular fa-copyright"></i> 2023 - RedStore.com</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>

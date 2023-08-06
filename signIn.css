@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color: #fff;
+    --secondary-color: #555; 
+    --tertiary-color:rgba(0, 0, 0, 0.1);
+    --fourth-color: #000;
+}
+.dark-theme{
+    --primary-color:#000106;
+    --secondary-color: #fff;
+    --tertiary-color: red;
+    --fourth-color: #fff;
+    /* --tertiary-color: rgba(124, 34, 34, 0.8); */
+}
+#moon{
+    width: 40px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 20px 15px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+
+
+
+/* ----account page----- */
+
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#638033);
+}
+.form-container{
+    background: rgba(62, 111, 131, 0.504);
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    border: 3px solid rgb(19, 175, 155);
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.btn{
+    display: inline-block;
+    background: rgb(59, 142, 59);
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: rgb(19, 175, 155);
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form.btn:focus{
+    outline: none;
+}
+
+#signInForm{
+    left: -300px;
+}
+#regForm{
+    left: 0;
+}
+#forgot{
+    font-size: 12px;
+    color: rgb(211, 10, 10);
+}
+#indicator{
+    width: 100px;
+    border: none;
+    background: rgb(19, 175, 155);
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+/* -----footer------ */
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 40%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: left;
+    cursor: pointer;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 18%;
+    text-align: left;
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.footer-bottom{
+    text-align: center;
+}
+.payment-img{
+    max-width: 335px;
+  margin-bottom: 15px;
+}
+.copyright{
+    text-align: center;
+    font-size: 18px;
+}
+body{
+    background: var(--primary-color);
+}
+
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* -----media query for less than 600px screen size------ */
+
+@media only screen and (max-width:600px) {
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3, .col-4{
+        flex-basis: 100%;
+    }
+    
+}

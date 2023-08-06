@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore | Products</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fcae184f71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="signIn.html"><i class="fa-solid fa-user"></i> Sign In</a></li>
+                        <li><a href="cart.html"><i class="fa-solid fa-cart-plus"></i>Cart</a></li>
+                    </ul>
+                </nav>
+
+                <img src="images/menubar.png" class="menu-icon" alt="" onclick="menutoggle()">
+                <img src="images/moon.png" id="moon" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!------- NOTIFICATION TOAST ------->
+
+    <div class="notification-toast" data-toast>
+
+        <button class="toast-close-btn" data-toast-close>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="toast-banner">
+            <img src="images/delivery1.jpeg" width="100" height="70">
+        </div>
+
+        <div class="toast-detail">
+            <p class="toast-message">
+                Order above ₹3000 for
+            </p>
+            <p class="toast-title">
+                Free Delivery In
+            </p>
+            <p class="toast-meta">
+                <time datetime="PT2M">2 Days</time> ago
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- ---------- featured products--------- -->
+    <div class="small-container ">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Sort by</option>
+                <option>Popularity</option>
+                <option>Price</option>
+                <option>Rating</option>
+                <option>Newest First</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="product_details.html"><img src="images/product-1.jpg" alt=""></a>
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹599.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="">
+                <h4>Stylish Casual Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₹899.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="">
+                <h4>Men Grey Track Pants</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹499.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="">
+                <h4>Purple Plain T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹459.00</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg" alt="">
+                <h4>White Stylish Sneakers</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹1299.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="">
+                <h4>Gray Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₹549.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="">
+                <h4>Men Mid-Calf/Crew</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹129.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="">
+                <h4>Stylish Analog Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹1599.00</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="">
+                <h4>New Fashion Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹899.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="">
+                <h4>Sports Shoes For Men</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₹899.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="">
+                <h4>Casual Shoes For Women</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹499.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="">
+                <h4>Black coloured Track Pants</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹599.00</p>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+
+
+    <!-- ---footer section---- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Popular Category</h3>
+                    <ul>
+                        <li>Electronic</li>
+                        <li>Fashion</li>
+                        <li>Cosmetic</li>
+                        <li>Health</li>
+                        <li>Watches</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Delivery</li>
+                        <li>Terms & Conditions</li>
+                        <li>Return Policy</li>
+                        <li>Report</li>
+                        <li>Secure Payment</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3 id="contact">Contact Us</h3>
+                    <ul>
+                        <li>
+                            <address class="content">
+                                <i class="fa-solid fa-location-dot"></i>
+                                22nd Street Colony Rajdev
+                                Path, Bangalore, India
+                            </address>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="tel:+607936-8058" class="footer-nav-link"> <i class="fa-solid fa-phone"></i> +91
+                                8456741234</a>
+                        </li>
+                        <li>
+                            <a href="mailto:example@gmail.com" class="footer-nav-link"> <i
+                                    class="fa-regular fa-envelope"></i> redstore@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <img src="images/payment.png" class="payment-img" alt="">
+                <p class="copyright"> Copyright <i class="fa-regular fa-copyright"></i> 2023 - RedStore.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
